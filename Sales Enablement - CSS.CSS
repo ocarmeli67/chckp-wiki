@@ -1,59 +1,79 @@
+<style>
+    /* NOT Working
+      <link rel="stylesheet" type="text/css"
+      href="https://checkpointwiki.atlassian.net/wiki/download/attachments/17095870/Wiki_Cloud_Menus_Stylesheet.CSS">*/
+    /* Home Button */
+      .homeButton { background-color: #444444;
+       border-right: 1px solid #E45785;
+       border-left: 1px solid #E45785;
+       display: inline-block;
+       vertical-align: top;
+       text-align: center;
+       padding: 6px;
+       width: 24px;
+       height: 27px;
+       cursor: pointer;
+      }
+      /* Style for the dropdown container */
+      .dropdown {
+       position: relative;
+       display: inline-block;
+      } 
+      /* Style for the dropdown button */
+      .dropbtn {
+       background-color: #444444;
+       color: #f2f2f2 !IMPORTANT;
+       border: none;
+       cursor: pointer;
+       text-align: center;
+       padding: 10px 10px;
+       text-decoration: none;
+       transition: 0.3s;
+       list-style: none !important;
+       /*border-right: 1px solid #E45785;*/
+       /*border-left: 1px solid #E45785;*/
+       font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+       font-size: 14px;
+      }
+      /* Style for the dropdown content */
+      .dropdown-content {
+       display: none;
+       position: absolute;
+       background-color: #f9f9f9;
+       box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2) !IMPORTANT;
+       z-index: 99;
+       font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; 
+       font-size: 14px;
+       margin: 0; /* Reset margin */
+       padding: 0; /* Reset padding */
+      }
+      /* Style for dropdown content links */
+      .dropdown-content a {
+       color: #999999;
+       padding: 6px 6px;
+       text-decoration: none;
+       display: block;
+       text-wrap: nowrap;
+       background-color: #E45785;
+       margin: 0; /* Reset margin */
+      }
+      
+      /* Change color on hover */
+      .dropdown-content a:hover {
+       color: black !IMPORTANT;
+       }
+      .MenuHyperlink {
+       color: white !important;
+      }
+      /* Show the dropdown content when the dropdown button is clicked */
+      .dropdown:hover .dropdown-content {
+       display: block;
+      }
+      /* Ensure no margin or padding for the link and image */
+      a, img {
+          margin: 0;
+          padding: 0;
+          display: inline-block;
+      }
 
-
-
-         /* Style for the dropdown container */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        /* Style for the dropdown button */
-         .dropbtn {
-            background-color: #444444;
- 		    color: #f2f2f2 !IMPORTANT;
-            border: none;
-            cursor: pointer;
-		    text-align: center;
-		    padding: 19px 15px 15px 15px;
-		    text-decoration: none;
-		    transition: 0.3s;
-		    font-size: 16px;
-		    list-style: none !important;
-		    border-right: 1px solid #E45785;
-		    border-left: 1px solid #E45785
-         } 
-        /* Style for the dropdown content */
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-        /* Style for dropdown content links */
-        .dropdown-content a {
-            color: #999999;
-            padding: 6px 6px;
-            text-decoration: none;
-            display: block;
-			text-wrap: nowrap;
-		    background-color: #E45785;
-        }
-
-        /* Change color on hover */
-        .dropdown-content a:hover {
-            color: black !IMPORTANT;
-        }
-
-		.MenuHyperlink {
-		    color: white !important;
-		}
-
-        /* Show the dropdown content when the dropdown button is clicked */
-        .dropdown:hover .dropdown-content {
-            display: block;
-        } 
-
-
+   </style>
