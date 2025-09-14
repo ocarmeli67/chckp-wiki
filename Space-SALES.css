@@ -1,0 +1,667 @@
+<style>
+.CPHeader1 {       
+    font-size: 16px;        
+    font-weight: 900;       
+    vertical-align:middle      
+}       
+.CPHeader2 {       
+    font-size: 14px;        
+    font-weight: 900;       
+    vertical-align:middle      
+}       
+.mayabox {       
+    border:1px solid #9C9BCD;        
+    float:left;        
+    margin-left:15px;       
+    margin-top:15px;       
+    padding-left:0px;       
+    width:300px;       
+    height:250px;       
+    overflow-x: hidden;       
+    overflow-y: auto;        
+    background-color: #E0EAF8;       
+}       
+.mayaboxlong {       
+    border:1px solid #9C9BCD;        
+    float:left;        
+    margin-left:15px;       
+    margin-top:15px;       
+    padding-left:0px;       
+    width:300px;       
+    height:516px;       
+    overflow-x: hidden;       
+    overflow-y: auto;        
+    background-color: #E0EAF8;       
+}       
+.mayaboxheader {       
+    border:0px solid #9C9BCD;        
+    margin-left:0px;       
+    margin-top:0px;       
+    padding-left:3px;       
+    padding-top:5px;       
+    width:300px;       
+    height:25px;       
+    background-color: #6094DB;       
+    color: #ffffff;       
+    font:bold 14px Helvetica,Arial,sans-serif;       
+}       
+.mayaboxbody {       
+    padding-left:3px;       
+    padding-top:3px;       
+}       
+.cph5 {       
+    font:bold 14px Helvetica,Arial,sans-serif;       
+    color:#080481;       
+    margin-left:5px;       
+    margin-top:5px;       
+}       
+.clear,#back{       
+    border:0 none #FFF;       
+    clear:both;       
+    font:normal 11px;       
+}       
+#bulletlist    
+{    
+    margin-left: 0;    
+    padding-left: 0;    
+    list-style:none;    
+}    
+#bulletlist li     
+{    
+    padding-top: 0px;    
+    padding-left: 20px;    
+    background-image: url(http://wiki.checkpoint.com/confluence/images/cpimages/bullet_lb_di.gif);    
+    background-repeat: no-repeat;    
+    background-position: 0 .5em;    
+}    
+    
+.khaki_bg {        
+    background: #f9e6c5 url(http://wiki.checkpoint.com/confluence/images/cpimages/bg_svc.gif) repeat-x;        
+}        
+      
+.green_bg {        
+    background: #e4f0df url(http://wiki.checkpoint.com/confluence/images/cpimages/bg_ds.gif) repeat-x;        
+}       
+    
+.snippet{    
+    font-family:"courier new";    
+    background-color:#eeeeee;    
+    padding-left:5px;    
+    padding-right:5px;    
+}    
+    
+div.snippet {    
+    border: 1px #cccccc dashed;    
+    margin-left:10px;    
+    margin-top:10px;    
+    margin-bottom:10px;    
+    margin-right:10px;    
+    padding-left:20px;    
+    padding-top:10px;    
+    padding-right:20px;    
+    padding-bottom:10px;    
+}      
+    
+.tooltip{    
+    width: 200px; color:#000;    
+    FONT-SIZE: 11px;    
+    FONT-STYLE: normal;    
+    FONT-FAMILY: Verdana;    
+    COLOR: #666666;    
+    text-decoration:none;    
+    text-align:left;}    
+    
+    
+.tooltip span.top{    
+    padding: 30px 8px 0;     
+    FONT-SIZE: 11px;    
+    FONT-STYLE: normal;    
+    FONT-FAMILY: Verdana;    
+    COLOR: #666666;    
+    white-space:normal;    
+    background: url(http://wiki.checkpoint.com/confluence/images/cpimages/bt.gif) no-repeat top    
+}    
+    
+.tooltip b.bottom{    
+    padding:3px 8px 15px;    
+    FONT-SIZE: 11px;    
+    FONT-STYLE: normal;    
+    FONT-FAMILY: Verdana;    
+    color: #548912;    
+    background: url(http://wiki.checkpoint.com/confluence/images/cpimages/bt.gif) no-repeat bottom;    
+    white-space:normal;    
+    }    
+    
+.RectangleBordersTopBottom    
+{     
+    margin: 4px;     
+    border-top: 1px solid #c3d3e5;     
+    border-bottom: 1px solid #c3d3e5;     
+    border-left: 0px solid #c3d3e5;     
+    border-right: 0px solid #c3d3e5;     
+}     
+    
+    
+@media screen {      
+    
+    DIV .boxWrapper {    
+        width:100%;    
+    }    
+        
+    DIV .boxFloatRight {    
+        float:right;    
+        min-width:310px;    
+        max-width:400px;    
+        width:33%;    
+    }       
+        
+    DIV .boxQuickLinks {    
+        min-width:310px;    
+        max-width:400px;    
+        width:33%;    
+        display: inline-block;     
+        vertical-align:top    
+    }    
+        
+    DIV .boxTableOfContent {    
+        min-width:310px;    
+        max-width:450px;    
+        width:33%;    
+        display: inline-block;     
+        vertical-align:top    
+    }    
+    
+    
+    DIV .boxFloatLeftPadding50 {    
+        float:left;    
+        padding-right:50px;    
+    }    
+    
+}      
+      
+    
+@media handheld {      
+    
+    DIV .boxWrapper {    
+        width:100%;    
+    }    
+        
+    DIV .boxFloatRight {    
+        min-width:310px;    
+        width:100%;    
+    }    
+        
+    DIV .boxQuickLinks {    
+        min-width:310px;    
+        width:100%;    
+    }    
+    
+        
+    DIV .boxTableOfContent {    
+        min-width:310px;    
+        width:100%;    
+    }       
+    
+    DIV .boxFloatLeftPadding50 {    
+    }    
+}      
+    
+    
+    
+    
+.aui-message.hint {    
+    background: #d8e4f1;    
+    border-color: #7BB3EC;    
+}    
+    
+/* To avoid the display of the header in the login page */    
+body.login #header {    
+   display: none;    
+}    
+    
+/* adjust the top of the body of a page to be displayed bellow the Search ambiguation message.*/    
+#content {    
+    /*margin-top: 25px;*/    
+}    
+    
+    
+/********************DASHBOARD STYLE**********************/    
+h1#title-heading > span#title-text {    
+visibility:false !important;    
+display:none !important;    
+}    
+    
+.newHotLinks        
+{        
+    color:#666666;        
+    font-size:11px;        
+    text-decoration:none;        
+    width:100%;        
+    font-family: Arial, Verdana, Helvetica, sans-serif;        
+    background: #F1F2F4 url('/confluence/images/cpimages/SecurityAlertBGCenter.gif') repeat-x;        
+    border: #BCBCBC 1px solid;        
+    padding-top:3px;        
+    padding-right:3px;        
+    padding-bottom:3px;        
+    padding-left:3px;        
+    padding:3px;        
+    margin:3px;        
+}        
+      
+.newHotLinks li        
+{        
+    list-style-image: url('/confluence/images/cpimages/arrow_blue.gif');        
+    padding-bottom: 5px;        
+    font-size:12px;        
+}        
+      
+.newHotLinks li a,.newHotLinks li a:link, .newHotLinks li a:VISITED {        
+    text-decoration:none;        
+}        
+      
+.newHotLinks li a:hover {        
+    text-decoration:underline;        
+}        
+      
+.newHotLinks ul {        
+    padding: 0;        
+    list-style-position: outside;        
+    margin: 4px 0 0 27px;        
+}        
+      
+.newHotLinks h2 {        
+    color:#266099;        
+    font-family:Arial,Verdana,Geneva,Helvetica,sans-serif;        
+    font-size:13px;        
+    font-weight:bold;        
+    padding-top:3px;        
+    padding-bottom:3px;        
+    padding-left:8px;        
+    position:relative;        
+    display:inline;        
+    cursor:auto        
+}        
+      
+.moreNewsLink {        
+    position:relative;        
+    bottom:4px;        
+}        
+      
+.moreNewsLink a:link, moreNewsLink a:hover, .moreNewsLink a:visited {        
+    color: #4A81C1;        
+    text-decoration: none;        
+    font-family: Verdana;        
+    font-weight:bold;        
+    font-size: 7pt;        
+}        
+    
+    
+    
+.khaki_bg {        
+    background: #f9e6c5 url('/confluence/images/cpimages/bg_svc.gif') repeat-x;        
+}        
+      
+.green_bg {        
+    background: #e4f0df url('/confluence/images/cpimages/bg_ds.gif') repeat-x;        
+}       
+    
+     
+      
+.categoryTitle        
+{        
+    color:#266099;        
+    font-family:Arial,Verdana,Geneva,Helvetica,sans-serif;        
+    font-size:14px;        
+    font-weight:bold;        
+    padding-top:3px;        
+    padding-bottom:3px;        
+    padding-left:8px;        
+    cursor:auto        
+}        
+      
+.categoryTitleSmall        
+{        
+    color:#266099;        
+    font-family:Arial,Verdana,Geneva,Helvetica,sans-serif;        
+    font-size:13px;        
+    font-weight:bold;        
+    padding-top:3px;        
+    padding-bottom:3px;        
+    padding-left:8px;        
+    cursor:auto        
+}        
+      
+      
+.categoryDivBoxShort        
+{        
+    width: 167px;        
+    height: 130px;        
+    border: 1px solid #c3d3e5;        
+    background: #F1F2F4 url('/confluence/images/cpimages/SecurityAlertBGCenter.gif') repeat-x;        
+}        
+      
+.categoryDivBox        
+{        
+    width: 167px;        
+    height: 160px;        
+    border: 1px solid #c3d3e5;        
+    background: #F1F2F4 url('/confluence/images/cpimages/SecurityAlertBGCenter.gif') repeat-x;        
+}        
+      
+.categoryTitle        
+{        
+    color:#266099;        
+    font-family:Arial,Verdana,Geneva,Helvetica,sans-serif;        
+    font-size:14px;        
+    font-weight:bold;        
+    padding-top:3px;        
+    padding-bottom:3px;        
+    padding-left:8px;        
+    cursor:auto        
+}        
+      
+.categoryTitleSmall        
+{        
+    color:#266099;        
+    font-family:Arial,Verdana,Geneva,Helvetica,sans-serif;        
+    font-size:13px;        
+    font-weight:bold;        
+    padding-top:3px;        
+    padding-bottom:3px;        
+    padding-left:8px;        
+    cursor:auto        
+}        
+      
+      
+.arrowHotLinks li a,.arrowHotLinks li a:link, .arrowHotLinks li a:VISITED {        
+    color:#336699;        
+    font-size:11px;        
+    text-decoration:none;        
+    font-family: Ariel, Verdana;        
+    line-height: 13px;        
+    padding-bottom:1px;        
+    vertical-align:middle;        
+}        
+      
+.arrowHotLinks li a:hover {        
+    text-decoration:underline;        
+}        
+      
+.arrowHotLinks ul {        
+    padding: 0;        
+    list-style-position: outside;        
+    margin: 1px 0 0 27px;        
+    line-height: 18px;        
+    padding-bottom:1px;        
+    vertical-align:middle;        
+}        
+      
+.arrowHotLinks h2 {        
+    color:#4A81C1;        
+    display:inline;        
+    font-size:1.3em;        
+    padding:0;        
+    text-transform:uppercase;        
+    font-family: Arial;        
+    position:relative;        
+    bottom:4px;        
+    margin-left:2px;        
+    line-height: 18px;        
+}        
+      
+.arrowHotLinks li        
+{        
+    list-style-image: url('/confluence/images/cpimages/arrow_blue.gif');        
+    line-height: 18px;        
+}        
+    
+<!-- menu CSS. part of anylinksmenu.css ---->    
+    
+.selectedanchor    
+{    
+    BACKGROUND: #f1f2f4    
+}    
+.anylinkmenu    
+{    
+    BORDER: #BCBCBC 1px solid;    
+    PADDING-LEFT: 0px;    
+    PADDING-RIGHT: 0px;    
+    PADDING-TOP: 5px;    
+    PADDING-BOTTOM: 0px;    
+    MARGIN: 0px;    
+    FONT-SIZE: 11px;    
+    FONT-STYLE: normal;    
+    FONT-FAMILY: Arial, Verdana;    
+    Z-INDEX: 100;    
+    BACKGROUND: url(/confluence/images/cpimages/SecurityAlertBGCenter.gif) #f1f2f4 repeat-x;    
+    LEFT: 0px;    
+    TOP: 0px;    
+    VISIBILITY: hidden;    
+    WIDTH: 220px;    
+    COLOR: #666666;    
+    POSITION: absolute;    
+    TEXT-DECORATION: none;    
+    list-style-image: url(/confluence/images/cpimages/arrow_blue.gif);     
+}    
+.anylinkmenu UL    
+{    
+}    
+    
+.anylinkmenu UL LI A    
+{    
+    DISPLAY: block;    
+    WIDTH: 100%;    
+}    
+    
+.anylinkmenu li a,.anylinkmenu li a:link, .anylinkmenu li a:VISITED {     
+    color:#336699;     
+    font-size:11px;     
+    text-decoration:none;     
+    font-family: Ariel, Verdana;     
+    line-height: 18px;     
+}     
+    
+.anylinkmenu li a:hover {     
+    text-decoration:underline;     
+}     
+    
+    
+.anylinkshadow    
+{    
+    Z-INDEX: 99;    
+    BACKGROUND: black;    
+    LEFT: 0px;    
+    VISIBILITY: hidden;    
+    POSITION: absolute;    
+    TOP: 0px    
+}    
+    
+/* Remove the Dashboard header from the main home page */    
+body.dashboard #main-header{     
+        display: none    
+}    
+body.dashboard {    
+     background: white;    
+}    
+    
+/* Remove the Link to People directory from the top menu */    
+#people-directory-link {    
+       display:none;    
+}    
+    
+/* Remove the Link to Gadjets Directory from the top help menu */    
+#gadget-directory-link {    
+       display:none;    
+}
+/* Remove the Link to About Confluence Directory from the top help menu */    
+#confluence-about-link{    
+       display:none;    
+}    
+    
+/* Remove the Link to Create Personal Space from the top help menu */    
+#create-personal-space-link{    
+       display:none;    
+}    
+    
+    
+    
+/*********************END OF DASHBOARD STYLE*********************/    
+    
+/* Hide link to 'Confluence' from top menu */    
+h1#logo {    
+   display:none;    
+}    
+    
+/*************** Reduce header height*********/    
+#header-precursor {    
+     line-height: 1;    
+}    
+    
+#create-page-button {    
+     margin: 0;    
+}    
+    
+.aui-header a {    
+    padding: 9px 10px;    
+}    
+    
+#header .aui-header .mw-anchor {    
+   padding-top: 5px;    
+}    
+    
+.app-switcher-trigger.aui-dropdown2-trigger {    
+ height: 31px;    
+}    
+    
+/*************** Fix spaces at top bar in Edit mode*********/    
+.contenteditor #full-height-container #header-precursor .cell {    
+    padding: 0;    
+}    
+    
+    
+/*************** Fix Disambiuation message in Edit mode *********/    
+.contenteditor #disambiguationDiv {    
+         display:none;    
+}    
+    
+#disambiguationDiv {    
+         color:blue;    
+        font-weight:normal;     
+         margin-top: -10px;     
+        padding-bottom:20px;    
+}    
+    
+    
+/******************* Set the default background color for {panel} macro to grey ******/    
+.panel {    
+    background: #f0f0f0;    
+}    
+    
+/******************* Set the backgroud color of badge fo notifications to red ******/    
+.mw-anchor.unread .badge {    
+    background: red;    
+}    
+    
+    
+/******************* Set header of User Profiel Page  ******/    
+body.profile #main-header {    
+    padding: 8px;    
+    margin-bottom: 0;    
+    background-color: #ffffff;    
+}       
+body.profile #title-heading .userLogoLink {    
+    display: none;    
+}       
+    
+body.profile #breadcrumb-section {    
+    display: none;    
+}    
+    
+/******************* Remove the Atlassian Image from the footer and reduce the padding  ******/    
+.footer-body {    
+ background: none;     
+ padding: 0 0 0 0;     
+}    
+    
+/******************* Outlook Calendar Frame.  ******/    
+.outlookCalendarFrame {    
+width:1000px;    
+height:900px;    
+-ms-zoom:0.7;    
+border: 0px 1px 1px 0px;    
+border-color: lightgrey;    
+border-style: solid;    
+}    
+    
+/******************* Hide link to Team Calendar from Top Menu.  ******/    
+/* #header [title='Calendars'] { */     
+/* display:none; */     
+/* } */     
+    
+/* End custom styles for Confluence */    
+    
+/********* Adjustments for Sales Wiki Space - by Dutch Arling *********/      
+   
+.topnavig {    
+    list-style-type: none !important;    
+    margin: 0;    
+    padding: 0;    
+    overflow: hidden;    
+    background-color: #444;    
+}    
+.topnavig li {    
+    float: left;    
+}    
+.topnavig li a {    
+    display: inline-block;    
+    color: #f2f2f2 !IMPORTANT;    
+    text-align: center;    
+    padding: 14px 16px;    
+    text-decoration: none;    
+    transition: 0.3s;    
+    font-size: 18px;    
+    list-style: none !important;    
+    border-right: thin solid darkgray;     
+    border-left: thin solid darkgray;    
+}    
+.topnavig li a:hover {    
+    background-color: #E45785;    
+}    
+    
+.topnavig .active {    
+    background-color: #E45785;    
+    color: #fff;    
+}    
+.topnavig .homeactive {    
+    background-color: yellow;    
+    color: #000;    
+}    
+.topnavi {    
+    list-style-type: none !important;    
+    margin: 0;    
+    padding: 0;    
+    overflow: hidden;    
+    background-color: #333;    
+}    
+.topnavi li {    
+    float: left;    
+}    
+.topnavi li a {    
+    display: inline-block;    
+    color: #f2f2f2 !IMPORTANT;    
+    text-align: center;    
+    padding: 14px 16px;    
+    text-decoration: none;    
+    transition: 0.3s;    
+    font-size: 14px;    
+    list-style: none !important;     
+}    
+.topnavi li a:hover {    
+    background-color: #A82B52;    
+}    
+    
+.topnavi .active {    
+    background-color: #A82B52;    
+    color: white;    
+}  
+</style>
